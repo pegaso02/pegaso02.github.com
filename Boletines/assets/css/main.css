@@ -1,0 +1,175 @@
+/*--
+#C6426E
+#642873
+#F5F5F5
+#000000
+*/
+html{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+.container{
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /*el background ocupa el 100$ de la pantalla*/
+    display: flex; /*para manipular la ubicacion de elementos*/
+    align-items: center; /*alinea vertical u horizontalmente*/
+    justify-content: center; /*se complementa con aling-text, alinea vertical u horizontalmente*/
+}
+
+.content{ /*aplica para files index y Crp*/
+    max-width: 960px; /*ancho de 960 px*/
+    width: 100%; /*Ocupe el 100% del ancho estableciedo antes*/
+    height: 80vh; /*altura 80% de toda la pantalla*/
+    background-color: #FFFFFF;
+    /*box-shadow: diferenciaHorizontal diferenciaVertical Desenfoque Amplitud Color; Bordes de la caja*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative;
+    
+    overflow: scroll; /*barras para bajar horizontal y vertical y leer texto*/
+    /*overflow-x: hidden; /*no nos podemos mover hacia los lados*/
+    
+}
+
+.content {
+    padding: 1em; /*reducimos el padding a 1.8em*/
+}
+
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0d342a;
+}
+th{
+    display: none;
+}
+
+.actions{ /* la X de cerrar en CrpAndWafles*/
+    position: absolute;
+    top: 1px;
+    right: 1px;/*posisionamos la X a 1 px de la derecha*/
+    padding: 1em;
+}
+
+.span{
+    color: #0d342a;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%; /*redondeo del borde del 50% del tamaño*/
+    background-color: #99f2c8;
+    display: inline-block; /*para que tome el alto y ancho*/
+    box-shadow:0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300; /*Grosor fuente*/
+    cursor: pointer; /*para que aparezca la manito en el cursor*/
+    display: flex; /*para alinear*/
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph{ /*clase del file CrpAndWafles.html*/
+    line-height: 1.8em; /*espacio entre reglones*/
+    font-weight: 700; /*grosor de la fuente*/
+
+}
+
+.tittle{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table{
+    width: 100%; /*ocupe todo el ancho de content */
+    border-spacing:0; /*espacio entre bordes de las celdas */
+}
+
+.table th, .table td{ /*modificamos encabezados y celdas*/
+    padding: 1em; /*espaciado interior*/
+    text-align: left; /*alineacion texto izquierda*/
+}
+
+.table tr:nth-child(even){ /*colorea las filas pares de la tabla, odd en vez de even para impares*/
+    background-color:#d8f0dd ;
+}
+
+.fa-star{
+    color: #ffc400;
+}
+
+.tittle-item{ /*titulo h2 crpAndWafles*/
+    font-size: 2em  ;
+    border-bottom-style: solid; /*borde inferior*/
+    border-width: 2px; /*grosor border*/
+    border-color: #c1e4c9 ; /*color borde*/
+   /*LO ANTERIOR Con shorthand properties queda asi --> border-bottom: solid 2px #ebe4ae;*/
+    padding-bottom: 1em; /*Espaciado entre borde y titulo2*/
+}
+
+.positionspan{ /*numero de CrpAndWafles*/
+    background-color: #1e4237;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 400px;
+}
+
+.address{ /*address file CrpAndWaffles*/
+    font-weight: bold; /*poner negrita*/
+    color: #1f4037;
+    font-size: 1.5em;
+    display: inline-block; /*nos habilita el espaciado margin, por defecto esta inline*/
+    margin-top: 1em; /*espacio entre direccion e imagen*/
+}
+
+@media (min-width:900px) { /*si se cumple la condicion q, pantallas que tengan al menos 900px de ancho*/
+    th{ /*Encabezado*/
+    display: table-cell;
+
+    }
+
+    td{ /*filas de la tabla*/
+    width: auto;
+    display: table-cell;
+
+   }
+
+   td:nth-of-type(1){
+    font-size:1em;
+   }
+   .content{
+    padding: 1.8em;
+   }
+}
+
+@media (min-height:550px) { 
+    .content{
+        height: 500px; /*que el content mida de alto 500px*/
+    }
+}
