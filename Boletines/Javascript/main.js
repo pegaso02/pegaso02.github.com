@@ -35,7 +35,7 @@ close.forEach(function (close) {
             content.classList.add("animate__animated");
 
             setTimeout(function(){ /*ejecuta la accion despues de 6 milisegundos*/
-                location.href = "/";
+                location.href = "/Boletines";
             },600);
 
         });
