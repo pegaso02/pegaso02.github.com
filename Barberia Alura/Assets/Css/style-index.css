@@ -1,0 +1,49 @@
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background-color:#dbdccd ; 
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;font-size: 16px;
+}
+
+#mision{
+    font-size:20px ;
+}
+
+em strong{
+    background-color:#6e5236;
+}
+
+.h2Subtitulo{
+    text-align: left;
+}
+
+
+.h3subtitulo{
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+.diferencial{
+    width: 50%;
+    height: 50%;
+}
+
+.item{
+    font-style: oblique;
+}
+
